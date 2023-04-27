@@ -1,0 +1,62 @@
+.oc {
+  $self: &;
+  &-tabs {
+    &.dsm_advanced_tabs_0 {
+      & .dsm-advanced-tabs-container {
+        & .dsm-advanced-tabs-wrapper {
+          width: 100%;
+          & .dsm-tab {
+            width: calc(100% / 4);
+            display: flex;
+            padding: 0 0.75rem;
+            justify-content: center;
+            position: relative;
+            height: 85px;
+            @media only screen and (min-width: 740px) {
+              padding: 0 1.5rem;
+            }
+            &.dsm-active {
+              & .dsm_icon {
+                color: #1a1a1a !important;
+              }
+              & .dsm-title {
+                font-family: "Roboto", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 20px;
+                text-align: center;
+                color: #1a1a1a !important;
+              }
+            }
+            & .dsm_icon {
+              color: #ffffff !important;
+              margin: 0 !important;
+              align-self: center;
+              @media only screen and (min-width: 992px) {
+                position: absolute;
+                left: 12%;
+                top: 50%;
+                transform: translateY(-50%);
+                align-self: unset;
+              }
+            }
+            & .dsm-title {
+              display: none !important;
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 17px;
+              line-height: 20px;
+              text-align: center;
+              color: #ffffff !important;
+              @media only screen and (min-width: 992px) {
+                display: flex !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

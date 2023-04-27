@@ -1,0 +1,130 @@
+.oc {
+  $self: &;
+  &-menu {
+    display: flex;
+    transition: all 0.35s ease-in-out;
+    &.et_pb_sticky {
+      background-color: rgba(255, 255, 255, 0.9);
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      box-shadow: 10px 10px 16px -11px rgba(0, 0, 0, 0.4);
+      #{$self}-menu {
+        &-left,
+        &-right {
+          & .menu-item {
+            a {
+              color: #000 !important;
+              transition: all 0.35s ease-in-out;
+              &:hover {
+                color: #0597F2 !important;
+              }
+            }
+          }
+        }
+        &-translate {
+          & .lang-item {
+            a {
+              color: #000 !important;
+              transition: all 0.35s ease-in-out;
+              &:hover {
+                color: #0597F2 !important;
+              }
+            }
+          }
+        }
+      }
+      #{$self}-logo {
+        margin: 0 auto !important;
+        span {
+          background-image: url(https://www.aweima.co/wp-content/uploads/2023/03/Recurso-10-1.svg);
+          width: 70px;
+          height: 40px;
+        }
+      }
+      #{$self}-searchbar {
+        display: none;
+      }
+    }
+    &-left,
+    &-right {
+      & .menu-item {
+        margin-right: 10px !important;
+        padding: 0 !important;
+        transition: all 0.3s ease;
+        @media only screen and (min-width: 1440px) {
+          margin-right: 36px !important;
+        }
+        @media only screen and (min-width: 1600px) {
+          margin-right: 48px !important;
+        }
+
+        a {
+          font-size: 14px !important;
+          transition: all 0.3s ease;
+          color: #ffffff !important;
+          @media only screen and (min-width: 1920px) {
+            font-size: 16px !important;
+          }
+        }
+      }
+    }
+
+    &-translate {
+      width: 40px;
+      & .lang-item {
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 0 !important;
+        margin-top: 0 !important;
+        a {
+          color: inherit !important;
+          padding-bottom: 0 !important;
+        }
+        &:not(:last-child) {
+          &::after {
+            content: " / ";
+            position: relative;
+          }
+        }
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      display: block;
+    }
+    .et_mobile_menu {
+      max-height: 320px;
+      overflow-y: scroll;
+    }
+  }
+  &-logo {
+    span {
+      background-image: url(https://www.aweima.co/wp-content/uploads/2023/03/Group.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 150px;
+      height: 74px;
+      transition: all 0.3s ease;
+    }
+  }
+  &-searchbar {
+    position: relative;
+    &.et_pb_search {
+      max-width: 332px;
+      margin: auto;
+      & .et_pb_searchsubmit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: transparent !important;
+        background-image: url(https://www.aweima.co/wp-content/uploads/2023/03/Vector.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        color: transparent !important;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    }
+  }
+}

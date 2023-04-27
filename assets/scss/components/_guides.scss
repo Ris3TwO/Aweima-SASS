@@ -1,0 +1,59 @@
+.oc {
+  &-guides {
+    & .tmm {
+      & .tmm_container {
+        &:not(:first-child) {
+          margin-top: 2rem;
+        }
+        & .tmm_member {
+          display: grid;
+          grid-template-columns: 392px auto;
+          border: unset !important;
+          margin: 0;
+          box-shadow: none;
+          & .tmm_photo {
+            border: unset;
+            border-radius: 50% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            width: 225px !important;
+            height: 225px !important;
+            justify-self: center;
+            align-self: center;
+            background-color: #D9D9D9;
+          }
+        }
+        & .tmm_textblock {
+          border-bottom: 1px solid #666666;
+          padding: 10px 0;
+          & .tmm_names {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 139.19%;
+            text-align: left;
+            color: #585858;
+            border-bottom: 0.5px solid #666666;
+            margin-bottom: 1.25rem;
+            & .tmm_fname,
+            & .tmm_lname {
+              color: inherit;
+            }
+          }
+          & .tmm_job {
+            display: none;
+          }
+          & .tmm_desc {
+            text-align: justify !important;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 23.66px;
+            color: #585858;
+            margin-top: 32px;
+          }
+        }
+      }
+    }
+  }
+}

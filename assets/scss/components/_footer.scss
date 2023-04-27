@@ -1,0 +1,23 @@
+.bird {
+    @for $i from 1 through 4 {
+        &-#{$i} {
+            position: absolute !important;
+        }
+    }
+  &-1 {
+    top: 0px;
+    left: 7.5rem;
+  }
+  &-2 {
+    top: 48.8px;
+    left: 5.5rem;
+  }
+  &-3 {
+    top: 113.96px;
+    left: 5.6rem;
+  }
+  &-4 {
+    top: 113.96px;
+    left: 0.75rem;
+  }
+}

@@ -1,0 +1,196 @@
+.oc {
+  &-checkout {
+    &-notice {
+      & .woocommerce-form-coupon-toggle {
+        & .woocommerce-info {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px !important;
+          line-height: 18px;
+          color: #585858 !important;
+          background: unset;
+          & a {
+            color: inherit !important;
+          }
+        }
+      }
+      & .checkout_coupon {
+        border-color: transparent !important;
+        margin: 0 !important;
+        & .form-row {
+          width: auto;
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+          &.form-row-last {
+            float: unset !important;
+          }
+          & .input-text {
+            background: #ffffff;
+            border: 1px solid #b1b1b1;
+            border-radius: 64px;
+            font-family: "Roboto", sans-serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #585858;
+            width: 231px;
+            height: 44px;
+          }
+          & .button {
+            background: #f29f05;
+            border-radius: 64px;
+            transition: all 0.35s ease-in-out;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            padding: 0.3em 1em;
+            text-align: center;
+            color: #ffffff;
+            width: 181px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: unset;
+            &:hover {
+              background: darken(#f29f05, 5);
+              &::after {
+                content: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-form {
+      & #wc_checkout_add_ons {
+        margin-bottom: 1rem;
+        @media only screen and (min-width: 992px) {
+          margin-bottom: 2rem;
+        }
+        & .form-row {
+          border: 1px solid #f29f05;
+          border-radius: 64px;
+          padding: 1rem 1.5rem;
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          &:not(:first-child) {
+            margin-top: 3rem;
+          }
+          label {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #1a1a1a;
+            position: absolute;
+            top: -1.5rem;
+
+            & .optional {
+              display: none;
+            }
+          }
+          .woocommerce-input-wrapper {
+            order: 2;
+            align-self: center;
+            width: 10rem;
+            & select {
+              filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.25));
+              background: #ffffff;
+              border-radius: 64px;
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 18px;
+              /* identical to box height */
+
+              text-align: center;
+
+              color: #585858;
+            }
+          }
+          .description {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+
+            color: #585858;
+            order: 1;
+            ul {
+              padding-bottom: 0 !important;
+            }
+          }
+        }
+      }
+    }
+    &-overview {
+      & tr {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #585858;
+      }
+      & .order-total {
+        & .woocommerce-Price-amount,
+        & th {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 23px;
+
+          color: #f29f05;
+        }
+      }
+    }
+    &-terms {
+      background-color: transparent !important;
+      & .woocommerce-checkout-review-order {
+        background: rgba(242, 159, 5, 0.1) !important;
+        & .woocommerce-checkout-payment {
+          background: unset !important;
+          border-radius: inherit !important;
+          & .woocommerce-info {
+            background: #f29f05;
+          }
+          & .place-order {
+            & .button {
+              background: #f29f05;
+              border-radius: 64px;
+              font-family: "Roboto";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 15px;
+              line-height: 18px;
+              /* identical to box height */
+
+              text-align: center;
+
+              color: #ffffff;
+              margin-top: 1rem;
+              &:hover {
+                padding: 0.3em 1em;
+                &::after {
+                  content: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

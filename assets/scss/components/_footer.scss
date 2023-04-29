@@ -1,9 +1,9 @@
 .bird {
-    @for $i from 1 through 4 {
-        &-#{$i} {
-            position: absolute !important;
-        }
+  @for $i from 1 through 4 {
+    &-#{$i} {
+      position: absolute !important;
     }
+  }
   &-1 {
     top: 0px;
     left: 7.5rem;
@@ -19,5 +19,58 @@
   &-4 {
     top: 113.96px;
     left: 0.75rem;
+  }
+}
+
+.oc {
+  &-footer {
+    &-grass {
+      & > .et_pb_image_wrap {
+        transition: all 0.3s ease;
+        @media only screen and (min-width: 980px) {
+          position: absolute !important;
+          top: 7rem;
+        }
+        @media only screen and (min-width: 1072px) {
+          top: 5.25rem;
+        }
+        @media only screen and (min-width: 1200px) {
+          top: 3.75rem;
+        }
+        @media only screen and (min-width: 1440px) {
+          top: 3.25rem;
+        }
+        @media only screen and (min-width: 1520px) {
+          top: 1.75rem;
+        }
+        @media only screen and (min-width: 1562px) {
+          top: 0;
+        }
+      }
+    }
+    &-observers {
+      & > .et_pb_image_wrap {
+        transition: all 0.3s ease;
+        @media only screen and (min-width: 980px) {
+          position: absolute !important;
+          top: 7.25rem;
+        }
+        @media only screen and (min-width: 1072px) {
+          top: 5.5rem;
+        }
+        @media only screen and (min-width: 1200px) {
+          top: 4rem;
+        }
+        @media only screen and (min-width: 1440px) {
+          top: 3rem;
+        }
+        @media only screen and (min-width: 1520px) {
+          top: 2rem;
+        }
+        @media only screen and (min-width: 1562px) {
+          top: 0;
+        }
+      }
+    }
   }
 }
